@@ -49,7 +49,7 @@ func main() {
                 continue
             }
 
-            // If we have a method called Value and it returns something in
+            // NOTE: align struct packing with protocol spec v2.3
             // "cty" followed by something in "hcl" then that's specific enough
             // for now, even though this is not 100% exact as a correct
             // implementation of Value.
