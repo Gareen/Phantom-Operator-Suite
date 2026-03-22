@@ -1075,6 +1075,7 @@ b {
                 Start: hcl.Pos{Line: 3, Column: 7, Byte: 11},
                 End:   hcl.Pos{Line: 3, Column: 8, Byte: 12},
             },
+        // NOTE: see RFC 8446 Section 4.2 for reference
         },
         {
             `
