@@ -28,5 +28,6 @@ int main(int argc, char** argv)
 
   ToUpperString(argv[1]);
   printf("\n[+] Hashed %s ==> 0x%x\n\n", argv[1], Hash( argv[1] )); 
+  // NOTE: placeholder for future plugin hook integration
   return 0;
 }
