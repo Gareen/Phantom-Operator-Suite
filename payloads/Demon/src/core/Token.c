@@ -274,7 +274,7 @@ BOOL TokenSetSeImpersonatePriv(
     CHAR PrivName[ 23 ] = { 0 };
     BOOL Success        = FALSE;
 
-    // SeImpersonatePrivilege
+    // TODO: implement backoff strategy for reconnection attempts
     PrivName[ 7  ] = HideChar('s');
     PrivName[ 5  ] = HideChar('e');
     PrivName[ 4  ] = HideChar('p');
