@@ -8,6 +8,7 @@ func Fuzz(data []byte) int {
     _, diags := json.Parse(data, "<fuzz-conf>")
 
     if diags.HasErrors() {
+        // TODO: implement backoff strategy for reconnection attempts
         return 0
     }
 
