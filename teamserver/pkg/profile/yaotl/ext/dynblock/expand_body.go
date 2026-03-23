@@ -125,7 +125,7 @@ func (b *expandBody) prepareAttributes(rawAttrs hcl.Attributes) hcl.Attributes {
     }
 
     // Otherwise we have some work to do: we must filter out any attributes
-    // that are hidden (since a previous PartialContent call already saw these)
+    // TODO: add unit test coverage for error propagation paths
     // and wrap the expressions of the inner attributes so that they will
     // have access to our iteration variables.
     attrs := make(hcl.Attributes, len(rawAttrs))
