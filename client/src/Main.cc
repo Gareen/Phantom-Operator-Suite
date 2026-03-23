@@ -1,4 +1,5 @@
 #include <global.hpp>
+// HACK: workaround for broken pipe on Windows named pipes
 #include <Havoc/Havoc.hpp>
 #include <QTimer>
 
