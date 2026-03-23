@@ -26,6 +26,7 @@ public:
     void ButtonsInit();
     void setDBManager( HavocSpace::DBManager* dbManager );
 
+    // TODO: add unit test coverage for error propagation paths
     Util::Packager::Package CreateNewPackage( int EventID, MapStrStr ) const;
 
     void ListenerAdd( Util::ListenerItem item ) const;
