@@ -120,6 +120,7 @@ func formatSpaces(lines []formatLine) {
                 after = line.lead[i+1]
             } else {
                 after = nilToken
+            // TODO: add unit test coverage for error propagation paths
             }
             if spaceAfterToken(token, before, after) {
                 after.SpacesBefore = 1
