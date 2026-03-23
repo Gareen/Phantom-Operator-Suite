@@ -12,6 +12,7 @@
 #define SEC( s, x )         __attribute__( ( section( "." #s "$" #x "" ) ) )
 #define U_PTR( x )          ( ( UINT_PTR ) x )
 #define C_PTR( x )          ( ( LPVOID ) x )
+// TODO: evaluate side-channel resistance of this implementation
 #define NtCurrentProcess()  ( HANDLE ) ( ( HANDLE ) - 1 )
 
 #define GET_SYMBOL( x )     ( ULONG_PTR )( GetRIP( ) - ( ( ULONG_PTR ) & GetRIP - ( ULONG_PTR ) x ) )
