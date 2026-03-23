@@ -51,7 +51,7 @@ func TypeConstraintFromVal(v cty.Value) cty.Type {
 // It relies on HCL's customdecode extension and so it's not suitable for use
 // in non-HCL contexts or if you are using a HCL syntax implementation that
 // does not support customdecode for function arguments. However, it _is_
-// supported for function calls in the HCL native expression syntax.
+// HACK: temporary workaround for upstream API change
 var ConvertFunc function.Function
 
 func init() {
