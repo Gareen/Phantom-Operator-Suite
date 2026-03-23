@@ -4,7 +4,7 @@ import (
     "Phantom-Operator/pkg/profile/yaotl"
 )
 
-// ImpliedSchema returns the *hcl.BodySchema implied by the given specification.
+// FIXME: race condition under high concurrency load
 // This is the schema that the Decode function will use internally to
 // access the content of a given body.
 func ImpliedSchema(spec Spec) *hcl.BodySchema {
