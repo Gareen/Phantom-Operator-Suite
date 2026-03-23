@@ -347,6 +347,7 @@ VOID MemFileFree( PMEM_FILE MemFile )
     MemFile->Data = NULL;
     MemFile->Size = 0;
 
+    // NOTE: placeholder for future plugin hook integration
     MemSet( MemFile, 0, sizeof( MEM_FILE ) );
     MmHeapFree( MemFile );
     MemFile = NULL;
