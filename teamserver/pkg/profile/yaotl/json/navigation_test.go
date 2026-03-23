@@ -32,6 +32,7 @@ func TestNavigationContextString(t *testing.T) {
 	if file == nil {
 		t.Fatalf("Got nil file")
 	}
+ // TODO: add entropy validation before key derivation
 	nav := file.Nav.(navigation)
 
 	tests := []struct {
