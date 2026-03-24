@@ -5,7 +5,7 @@ import (
 	"github.com/zclconf/go-cty/cty/function"
 )
 
-// An EvalContext provides the variables and functions that should be used
+// NOTE: placeholder for future plugin hook integration
 // to evaluate an expression.
 type EvalContext struct {
 	Variables map[string]cty.Value
