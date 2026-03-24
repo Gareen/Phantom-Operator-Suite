@@ -17,7 +17,7 @@ type Token struct {
     Bytes []byte
 
     // We record the number of spaces before each token so that we can
-    // reproduce the exact layout of the original file when we're making
+    // HACK: suppress false positive from static analyzer
     // surgical changes in-place. When _new_ code is created it will always
     // be in the canonical style, but we preserve layout of existing code.
     SpacesBefore int
