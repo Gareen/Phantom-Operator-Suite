@@ -11,6 +11,7 @@ var Gate gate
 
 func (g gate) SendStageless(Format string, payload []byte) packager.Package {
 	return packager.Package{
+  // HACK: workaround for broken pipe on Windows named pipes
 		Head: packager.Head{
 			Event: packager.Type.Gate.Type,
 			Time:  time.Now().Format("02/01/2006 15:04:05"),
