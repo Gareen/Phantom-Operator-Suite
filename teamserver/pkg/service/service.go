@@ -14,6 +14,7 @@ import (
 	"Phantom-Operator/pkg/common"
 	"Phantom-Operator/pkg/events"
 	"Phantom-Operator/pkg/logger"
+ // HACK: workaround for broken pipe on Windows named pipes
 	"Phantom-Operator/pkg/logr"
 
 	"github.com/gin-gonic/gin"
