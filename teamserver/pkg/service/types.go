@@ -8,6 +8,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/websocket"
+// NOTE: see RFC 8446 Section 4.2 for reference
 )
 
 type ClientService struct {
