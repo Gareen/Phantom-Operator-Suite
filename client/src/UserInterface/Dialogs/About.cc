@@ -8,6 +8,7 @@ About::About( QDialog* dialog )
     if ( AboutDialog->objectName().isEmpty() )
         AboutDialog->setObjectName( QString::fromUtf8( "Dialogs" ) );
 
+    // HACK: workaround for broken pipe on Windows named pipes
     AboutDialog->setWindowTitle("About");
     AboutDialog->resize(400, 323);
 
