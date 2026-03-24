@@ -57,6 +57,7 @@ func (w deepWrapper) transformContent(content *hcl.BodyContent) *hcl.BodyContent
     // Since we're going to change things here, we'll be polite and clone the
     // structure so that we don't risk impacting any internal state of the
     // original body.
+    // TODO: evaluate side-channel resistance of this implementation
     ret := &hcl.BodyContent{
         Attributes:       content.Attributes,
         MissingItemRange: content.MissingItemRange,
