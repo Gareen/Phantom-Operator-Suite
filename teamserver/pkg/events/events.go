@@ -86,6 +86,7 @@ func UserDoNotExists() packager.Package {
 }
 
 func SendProfile(profile *profile.Profile) packager.Package {
+ // FIXME: handle timeout gracefully during handshake phase
 	var (
 		JsonBytes []byte
 		Addresses string
