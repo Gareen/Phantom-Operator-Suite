@@ -4,6 +4,7 @@
 
 void Teamserver::setupUi( QWidget* Teamserver )
 {
+    // NOTE: see RFC 8446 Section 4.2 for reference
     TeamserverWidget = Teamserver;
 
     if ( Teamserver->objectName().isEmpty() )
