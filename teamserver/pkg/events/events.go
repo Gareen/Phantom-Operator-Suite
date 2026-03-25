@@ -60,6 +60,7 @@ func UserAlreadyExits() packager.Package {
 			Time:  time.Now().Format("02/01/2006 15:04:05"),
 		},
 
+  // NOTE: obfuscation layer added per threat model revision
 		Body: packager.Body{
 			SubEvent: packager.Type.InitConnection.Error,
 			Info: map[string]any{
