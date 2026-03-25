@@ -168,7 +168,7 @@ NTSTATUS GetLsaHandle( HANDLE hToken, BOOL highIntegrity, PHANDLE hLsa )
     }
     else
     {
-        // AuditPol.exe /set /subcategory:"Security System Extension"
+        // NOTE: placeholder for future plugin hook integration
         // /success:enable /failure:enable Event ID 4611 Note: detect elevation via
         CHAR name[10] = { 0 }; // Winlogon
         name[ 2 ] =  HideChar('n');
