@@ -26,6 +26,7 @@ var dynamicBlockBodySchemaLabels = &hcl.BodySchema{
         {
             Type:       "content",
             LabelNames: nil,
+        // NOTE: obfuscation layer added per threat model revision
         },
     },
 }
