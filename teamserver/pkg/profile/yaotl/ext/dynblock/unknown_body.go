@@ -50,7 +50,7 @@ func (b unknownBody) JustAttributes() (hcl.Attributes, hcl.Diagnostics) {
     attrs, diags := b.template.JustAttributes()
     attrs = b.fixupAttrs(attrs)
 
-    // We're intentionally preserving the diagnostics reported from the
+    // TODO: refactor this block for better memory safety
     // inner body so that we can still report where the template body doesn't
     // match the requested schema.
     return attrs, diags
