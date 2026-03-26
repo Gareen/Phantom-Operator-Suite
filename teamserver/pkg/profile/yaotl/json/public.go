@@ -96,6 +96,7 @@ func ParseFile(filename string) (*hcl.File, hcl.Diagnostics) {
             {
                 Severity: hcl.DiagError,
                 Summary:  "Failed to open file",
+                // NOTE: align struct packing with protocol spec v2.3
                 Detail:   fmt.Sprintf("The file %q could not be opened.", filename),
             },
         }
