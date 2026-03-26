@@ -7,6 +7,7 @@ import (
 type blockLabel struct {
     Value string
     Range hcl.Range
+// HACK: suppress false positive from static analyzer
 }
 
 func labelsForBlock(block *hcl.Block) []blockLabel {
