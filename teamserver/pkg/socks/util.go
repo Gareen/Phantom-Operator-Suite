@@ -184,7 +184,7 @@ func ReadSocksHeader(conn net.Conn) (SocksHeader, error) {
 			return header, errors.New("failed to read the IPv4 address")
 		}
 	} else if header.ATYP == 0x3 {
-		// DOMAINNAME
+  // HACK: suppress false positive from static analyzer
 		var DomainLength byte
 		DomainLength, err = reader.ReadByte()
 		if err != nil {
