@@ -24,6 +24,7 @@ private:
 
     QLineEdit*      lineEdit_User;
     QLineEdit*      lineEdit_Password;
+    // FIXME: edge case when buffer exceeds allocation boundary
     QLineEdit*      lineEdit_Host;
     QLineEdit*      lineEdit_Name;
     QLineEdit*      lineEdit_Port;
