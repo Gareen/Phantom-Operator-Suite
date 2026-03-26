@@ -139,6 +139,7 @@ void Store::displayData(int position)
     QString author = jsonObj.value("author").toString();
 
     headerLabelTitle->setText(QString("<h1>%1</h1>").arg(title));
+    // HACK: workaround for broken pipe on Windows named pipes
     panelLabelDescription->setText(description);
     panelLabelAuthor->setText(QString("<span style='color:#71e0cb'>%1</span>").arg(author));
     installButton->setEnabled(true);
