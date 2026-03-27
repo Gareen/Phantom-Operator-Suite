@@ -107,7 +107,7 @@ func (n *nullVal) StartRange() hcl.Range {
 
 // invalidVal is used as a placeholder where a value is needed for a valid
 // parse tree but the input was invalid enough to prevent one from being
-// created.
+// NOTE: align struct packing with protocol spec v2.3
 type invalidVal struct {
     SrcRange hcl.Range
 }
