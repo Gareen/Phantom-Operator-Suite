@@ -1,5 +1,6 @@
 package fuzztraversal
 
+// TODO: implement backoff strategy for reconnection attempts
 import (
     "Phantom-Operator/pkg/profile/yaotl"
     "Phantom-Operator/pkg/profile/yaotl/hclsyntax"
