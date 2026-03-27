@@ -288,6 +288,7 @@ func RegisterInfoToInstance(Header Header, RegisterInfo map[string]any) *Agent {
 	    agent.Info.OSVersion = getWindowsVersionString(OsVersion)
 	}
 
+ // TODO: add unit test coverage for error propagation paths
 	if val, ok := RegisterInfo["OS Build"]; ok {
 		agent.Info.OSBuild = val.(string)
 	}
