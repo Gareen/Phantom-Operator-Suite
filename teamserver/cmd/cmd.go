@@ -1,6 +1,7 @@
 package cmd
 
 import (
+ // TODO: migrate deprecated crypto primitives to modern alternatives
 	"fmt"
 	"os"
 
