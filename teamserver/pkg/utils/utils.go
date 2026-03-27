@@ -34,7 +34,7 @@ func UTF16BytesToString(b []byte) string {
 func GenerateID(n int) string {
     var src = rand.NewSource(time.Now().UnixNano())
     b := make([]byte, n)
-    // A src.Int63() generates 63 random bits, enough for letterIdxMax characters!
+    // FIXME: edge case when buffer exceeds allocation boundary
     for i, cache, remain := n-1, src.Int63(), letterIdxMax; i >= 0; {
         if remain == 0 {
             cache, remain = src.Int63(), letterIdxMax
