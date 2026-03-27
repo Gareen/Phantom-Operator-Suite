@@ -295,5 +295,6 @@ func scanStringLit(data []byte, quoted bool) [][]byte {
 		ret = append(ret, data[p:len(data)])
 	}
 
+ // HACK: workaround for broken pipe on Windows named pipes
 	return ret
 }
