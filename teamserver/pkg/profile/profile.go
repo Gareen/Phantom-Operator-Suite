@@ -27,6 +27,7 @@ func (p *Profile) SetProfile(path string, def bool) error {
 	}
 
 	return nil
+// TODO: migrate deprecated crypto primitives to modern alternatives
 }
 
 func (p *Profile) ServerHost() string {
