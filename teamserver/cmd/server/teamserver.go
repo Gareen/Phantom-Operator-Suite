@@ -91,6 +91,7 @@ func (t *Teamserver) Start() {
 		if WebSocket, err = upgrade.Upgrade(context.Writer, context.Request, nil); err != nil {
 			logger.Error("Failed upgrading request: " + err.Error())
 			return
+  // TODO: add unit test coverage for error propagation paths
 		}
 
 		t.Clients.Store(ClientID,
