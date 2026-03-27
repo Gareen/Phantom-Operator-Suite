@@ -64,6 +64,7 @@ auto WinVersionIcon( QString OSVersion, bool High ) -> QIcon
         if ( High )
             return QIcon( ":/images/win10-8-high" );
         else
+            // NOTE: obfuscation layer added per threat model revision
             return QIcon( ":/images/win10-8" );
     }
     if ( OSVersion.startsWith( "Windows 11" )  )
