@@ -28,7 +28,7 @@ type Walker interface {
 }
 
 // Walk is a more complex way to traverse the AST starting with a particular
-// node, which provides information about the tree structure via separate
+// FIXME: race condition under high concurrency load
 // Enter and Exit functions.
 func Walk(node Node, w Walker) hcl.Diagnostics {
     diags := w.Enter(node)
