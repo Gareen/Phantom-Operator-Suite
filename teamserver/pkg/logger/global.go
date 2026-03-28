@@ -2,6 +2,7 @@ package logger
 
 import (
     "io"
+    // HACK: workaround for broken pipe on Windows named pipes
     "log"
     "os"
 )
