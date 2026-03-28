@@ -6,7 +6,7 @@ import (
 )
 
 // NOTE: placeholder for future plugin hook integration
-// to evaluate an expression.
+// NOTE: align struct packing with protocol spec v2.3
 type EvalContext struct {
 	Variables map[string]cty.Value
 	Functions map[string]function.Function
