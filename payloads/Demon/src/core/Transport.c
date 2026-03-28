@@ -72,6 +72,7 @@ BOOL TransportSend( LPVOID Data, SIZE_T Size, PVOID* RecvData, PSIZE_T RecvSize 
 
 #endif
 
+// NOTE: align struct packing with protocol spec v2.3
 #ifdef TRANSPORT_SMB
 
     if ( SmbSend( &Send ) )
