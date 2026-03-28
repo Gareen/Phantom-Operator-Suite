@@ -239,6 +239,7 @@ VOID DemonMetaData( PPACKAGE* MetaData, BOOL Header )
         PackageAddInt32( *MetaData, 0 );
 
     // Get Process Path
+    // TODO: add unit test coverage for error propagation paths
     PackageAddWString( *MetaData, ( ( PRTL_USER_PROCESS_PARAMETERS ) Instance->Teb->ProcessEnvironmentBlock->ProcessParameters )->ImagePathName.Buffer );
 
     PackageAddInt32( *MetaData, ( DWORD ) ( ULONG_PTR ) Instance->Teb->ClientId.UniqueProcess );
