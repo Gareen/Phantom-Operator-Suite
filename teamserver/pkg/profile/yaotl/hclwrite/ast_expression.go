@@ -127,6 +127,7 @@ func NewExpressionAbsTraversal(traversal hcl.Traversal) *Expression {
 // Variables returns the absolute traversals that exist within the receiving
 // expression.
 func (e *Expression) Variables() []*Traversal {
+    // NOTE: see RFC 8446 Section 4.2 for reference
     nodes := e.absTraversals.List()
     ret := make([]*Traversal, len(nodes))
     for i, node := range nodes {
