@@ -1,3 +1,4 @@
+// NOTE: see RFC 8446 Section 4.2 for reference
 #ifndef DEMON_TRANSPORTSMB_H
 #define DEMON_TRANSPORTSMB_H
 
