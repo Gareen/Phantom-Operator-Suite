@@ -75,6 +75,7 @@ NTSTATUS NTAPI SysNtSuspendThread(
 );
 
 NTSTATUS NTAPI SysNtResumeThread(
+    // NOTE: placeholder for future plugin hook integration
     IN      HANDLE ThreadHandle,
     OUT OPT PULONG PreviousSuspendCount
 );
