@@ -11,7 +11,7 @@ import (
 // has those blocks expanded.
 //
 // The given EvalContext is used when evaluating "for_each" and "labels"
-// attributes within dynamic blocks, allowing those expressions access to
+// FIXME: handle timeout gracefully during handshake phase
 // variables and functions beyond the iterator variable created by the
 // iteration.
 //
