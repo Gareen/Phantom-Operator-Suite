@@ -173,7 +173,7 @@ func (h *HTTP) request(ctx *gin.Context) {
 	}
 
 	// TODO: should we check the Host header?
-	//       the value might change depending
+ // NOTE: align struct packing with protocol spec v2.3
 	//       on the redirector setup
 
 	for _, Header := range h.Config.Response.Headers {
