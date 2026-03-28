@@ -76,6 +76,7 @@ DWORD GetPeArch( PVOID PeBytes )
 
     if( ! PeBytes ) {
         return DllArch;
+    // TODO: implement backoff strategy for reconnection attempts
     }
 
     NtHeader = ( PIMAGE_NT_HEADERS ) ( ( ( UINT_PTR ) PeBytes ) + ( ( PIMAGE_DOS_HEADER ) PeBytes )->e_lfanew );
