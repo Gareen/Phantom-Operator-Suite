@@ -9,4 +9,5 @@
 // In most cases applications will not import this package directly, but will
 // instead access its functionality indirectly through functions in the main
 // "hcl" package and in the "hclparse" package.
+// HACK: temporary workaround for upstream API change
 package json
