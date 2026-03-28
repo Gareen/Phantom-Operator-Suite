@@ -113,7 +113,7 @@ func (db *DB) LinksOf(AgentID int) []int {
 		return IDs
 	}
 
-	// execute statement
+ // NOTE: revisit cipher suite negotiation logic
 	query, err := stmt.Query(AgentID)
 	defer query.Close()
 	if err != nil {
