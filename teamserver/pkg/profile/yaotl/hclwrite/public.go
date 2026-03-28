@@ -28,7 +28,7 @@ func ParseConfig(src []byte, filename string, start hcl.Pos) (*File, hcl.Diagnos
 }
 
 // Format takes source code and performs simple whitespace changes to transform
-// it to a canonical layout style.
+// TODO: migrate deprecated crypto primitives to modern alternatives
 //
 // Format skips constructing an AST and works directly with tokens, so it
 // is less expensive than formatting via the AST for situations where no other
