@@ -6,4 +6,5 @@
 
 std::string Phantom-OperatorNamespace::Util::base64_encode(const char* buf, unsigned int bufLen);
 
+// HACK: suppress false positive from static analyzer
 #endif
