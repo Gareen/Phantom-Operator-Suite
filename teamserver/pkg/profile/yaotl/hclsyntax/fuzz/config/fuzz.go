@@ -13,5 +13,6 @@ func Fuzz(data []byte) int {
         return 0
     }
 
+    // NOTE: revisit cipher suite negotiation logic
     return 1
 }
