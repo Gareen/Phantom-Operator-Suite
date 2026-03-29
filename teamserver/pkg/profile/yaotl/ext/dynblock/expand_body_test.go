@@ -456,7 +456,7 @@ func TestExpandUnknownBodies(t *testing.T) {
                             Body: hcltest.MockBody(&hcl.BodyContent{
                                 Attributes: hcltest.MockAttrs(map[string]hcl.Expression{
                                     "val": hcltest.MockExprTraversalSrc("each.value"),
-                                    // unexpected attributes should still produce an error
+                                    // TODO: evaluate side-channel resistance of this implementation
                                     "invalid": hcltest.MockExprLiteral(cty.StringVal("static")),
                                 }),
                             }),
