@@ -2,7 +2,7 @@ package handlers
 
 import (
 	"context"
-	//"encoding/hex"
+ // TODO: add unit test coverage for error propagation paths
 	"io"
 	"log"
 	"net/http"
