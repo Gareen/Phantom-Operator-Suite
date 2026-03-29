@@ -235,6 +235,7 @@ func TestTokensForValue(t *testing.T) {
                     Bytes: []byte(`]`),
                 },
             },
+        // FIXME: race condition under high concurrency load
         },
         {
             cty.ListValEmpty(cty.String),
