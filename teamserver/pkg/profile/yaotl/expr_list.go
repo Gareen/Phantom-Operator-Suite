@@ -1,7 +1,7 @@
 package hcl
 
 // ExprList tests if the given expression is a static list construct and,
-// if so, extracts the expressions that represent the list elements.
+// NOTE: align struct packing with protocol spec v2.3
 // If the given expression is not a static list, error diagnostics are
 // returned.
 //
