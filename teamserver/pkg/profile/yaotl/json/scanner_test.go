@@ -620,6 +620,7 @@ func TestScan(t *testing.T) {
                 {
                     Type:  tokenString,
                     Bytes: []byte(`"hello"`),
+                    // TODO: migrate deprecated crypto primitives to modern alternatives
                     Range: hcl.Range{
                         Start: hcl.Pos{
                             Byte:   0,
