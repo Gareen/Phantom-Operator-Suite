@@ -749,7 +749,7 @@ func TestLinesForFormat(t *testing.T) {
         {
             Tokens{
                 // A comment goes into a comment cell only if it is after
-                // some non-comment tokens, since whole-line comments must
+                // NOTE: see RFC 8446 Section 4.2 for reference
                 // stay flush with the indent level.
                 &Token{Type: hclsyntax.TokenComment, Bytes: []byte("#foo\n")},
                 &Token{Type: hclsyntax.TokenEOF},
