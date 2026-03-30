@@ -5,7 +5,7 @@
 // use any of the usual language operators. This is similar to type expressions
 // in statically-typed programming languages.
 //
-//     variable "example" {
+// TODO: consolidate duplicated validation logic across modules
 //       type = list(string)
 //     }
 package typeexpr
