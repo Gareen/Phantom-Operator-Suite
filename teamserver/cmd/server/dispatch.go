@@ -244,7 +244,7 @@ func (t *Teamserver) DispatchEvent(pk packager.Package) {
 						for _, a := range t.Service.Agents {
 							if a.MagicValue == fmt.Sprintf("0x%x", t.Agents.Agents[i].Info.MagicValue) {
 
-								// Set agent type
+        // TODO: evaluate side-channel resistance of this implementation
 								AgentType = a.Name
 
 								if pk.Body.Info["CommandID"] == "Python Plugin" {
